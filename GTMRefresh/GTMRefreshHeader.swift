@@ -53,7 +53,7 @@ open class GTMRefreshHeader: GTMRefreshComponent, SubGTMRefreshComponentProtocol
         }
     }
     
-    override var state: GTMRefreshState {
+    override public var state: GTMRefreshState {
         didSet {
             guard oldValue != state else {
                 return

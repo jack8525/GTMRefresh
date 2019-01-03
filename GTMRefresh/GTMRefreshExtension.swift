@@ -11,7 +11,7 @@ import ObjectiveC
 
 extension UIScrollView {
     
-    internal var gtmHeader: GTMRefreshHeader? {
+    public var gtmHeader: GTMRefreshHeader? {
         get {
             return objc_getAssociatedObject(self, &GTMRefreshConstant.associatedObjectGtmHeader) as? GTMRefreshHeader
         }
@@ -19,7 +19,7 @@ extension UIScrollView {
             objc_setAssociatedObject(self, &GTMRefreshConstant.associatedObjectGtmHeader, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
     }
-    internal var gtmFooter: GTMLoadMoreFooter? {
+    public var gtmFooter: GTMLoadMoreFooter? {
         get {
             return objc_getAssociatedObject(self, &GTMRefreshConstant.associatedObjectGtmFooter) as? GTMLoadMoreFooter
         }

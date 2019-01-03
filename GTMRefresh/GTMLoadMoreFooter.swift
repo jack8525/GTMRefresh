@@ -47,7 +47,7 @@ open class GTMLoadMoreFooter: GTMRefreshComponent, SubGTMRefreshComponentProtoco
         }
     }
     
-    override var state: GTMRefreshState {
+    override public var state: GTMRefreshState {
         didSet {
             guard oldValue != state, let scrollV = scrollView else {
                 return

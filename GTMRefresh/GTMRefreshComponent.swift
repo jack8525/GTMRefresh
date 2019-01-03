@@ -34,7 +34,7 @@ open class GTMRefreshComponent: UIView {
     
     public var scrollViewOriginalInset: UIEdgeInsets?
     
-    var state: GTMRefreshState = .idle
+    public var state: GTMRefreshState = .idle
     
     // MARK: Life Cycle
     
